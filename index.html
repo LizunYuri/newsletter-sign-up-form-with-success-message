@@ -26,9 +26,9 @@
         <li>And much more!</li>
       </ul>
       <form  class="user-form" id="user-form">
-        <label for="email">Email address</label>
+        <label for="user-email-input">Email address</label>
         <span aria-live="polite" id="email-error"></span>
-        <input onfocus="removeError()" class="user-email-input" type="email" name="email" placeholder="email@company.com">
+        <input onfocus="removeError()" id="user-email-input" class="user-email-input" type="email" name="email" placeholder="email@company.com">
         <input type="submit" value="Subscribe to monthly newsletter">
       </form>
     </div>
@@ -38,16 +38,14 @@
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Newsletter sign-up form with success message" style="width:100%; margin-right: 24px;">
       </picture>
     </div>
-
-   
   </main>
 
-  <dialog id="modal" class="dialog">
+  <div id="modal" class="dialog">
     <img class='dialog-img' src="./assets/images/icon-success.svg" alt="sucess">
     <h3>Thanks for subscribing!</h3>
     <p>A confirmation email has been sent to <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
     <button class="dialog-btn" id="close-dialog-btn">Dismiss message</button>
-  </dialog>   
+  </div>   
 
   <footer>
     <div class="attribution">
