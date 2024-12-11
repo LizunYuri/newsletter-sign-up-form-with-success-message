@@ -184,9 +184,7 @@ input[type=submit]:hover {
 }
 
 .dialog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -236,6 +234,11 @@ input[type=submit]:hover {
 }
 .dialog > p > span {
   font-weight: 700;
+}
+
+.is-error {
+  background: hsla(4, 100%, 67%, 0.3);
+  color: hsl(4, 100%, 67%);
 }
 
 @media (max-width: 48em) {

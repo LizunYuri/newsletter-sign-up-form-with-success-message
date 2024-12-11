@@ -159,7 +159,7 @@ input[type='submit']{
 }
 
 .dialog{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -199,6 +199,11 @@ input[type='submit']{
             font-weight: 700;
         }
     }
+}
+
+.is-error{
+    background: hsla(4, 100%, 67%, 0.3);
+    color: hsl(4, 100%, 67%);
 }
 
 @media (max-width: 48em) {
